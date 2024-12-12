@@ -12,4 +12,4 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
     # Render file index.html và truyền biến "username"
-    return templates.TemplateResponse("index.html", {"request": request, "username": "Người dùng"})
+    return templates.TemplateResponse("index.html", {"request": request, "username": "Kim Ngân"})
