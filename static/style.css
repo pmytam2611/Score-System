@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    width: 48%;
+    padding: 10px;
+}
+
+.year,
+.semester{
+    padding: 10px;
+}
+
+select{
+    width: 35px;
+}
+
+.input-subject{
+    margin: 10px;
+}
+
+.input-subject input{
+    margin: 5px;
+}
+
+.credit-input,
+.result-input,
+.retake-input{
+    width: 20px;
+}
+
+.result-before{
+    margin-left: 20px;
+}
+
+.button-container{
+    display: flex;
+}
+
+#add,
+#result-btn{
+    margin: 10px;
+}
+
+.display-result{
+    height: 400px;
+    border: solid 1px;
+}

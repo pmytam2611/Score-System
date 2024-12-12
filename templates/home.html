@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập điểm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column add-mark">
+            <h1>Nhập điểm</h1>
+            <label class="year">Năm học</label>
+            <select name="year" id="year">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label class="semester">Học kỳ</label>
+            <select name="semester" id="semester">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <div class="input-subject">
+                <label>Được miễn học phần</label>
+                <input type="checkbox" id="free-point">
+                <label style="margin-left: 15px;">Điều kiện</label>
+                <input type="checkbox" id="condition"> <br>
+                <label>Tên học phần</label>
+                <input type="text" class="subject-input">
+                <label>Tín chỉ</label>
+                <input type="text" class="credit-input">
+                <label>Điểm số</label>
+                <input type="text" class="result-input"> <br>
+                <input type="radio" name="retake" id="radio1">Học lại
+                <input type="radio" name="retake" id="radio2">Cải thiện
+                <label class="result-before">Điểm số trước đó</label>
+                <input type="text" class="retake-input" disabled> <br>
+                <button id="clearSelection" onclick="clearSelection()">Bỏ chọn</button>
+            </div>
+            <div class="button-container">
+                <button id="add">Thêm học phần</button>
+                <button id="result-btn">Tính điểm</button>
+            </div>
+        </div>
+        <div class="column result">
+            <h1>Danh sách đã thêm học phần</h1>
+            <div class="display-result">
+                <table cellspacing="10">
+                    <thead>
+                        <tr>
+                            <th style="width: 300px;">Tên học phần</th>
+                            <th>Tín chỉ</th>
+                            <th>Điểm</th>
+                            <th>Năm học</th>
+                            <th>Học kỳ</th>
+                          </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
